@@ -13,6 +13,7 @@ const FriendListItem = ({
     return (
         <div className={FriendListCss.FriendList__card}>
             <img className={FriendListCss.FriendList__card_image} src={avatar} alt={name} />
+            {/* @murselsen */}
             <p className={FriendListCss.FriendList__card_name}>{name}</p>
             <p className={FriendListCss.FriendList__card_state} style={{ color: statusColor }}>{statusValue}</p>
         </div>

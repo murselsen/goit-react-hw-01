@@ -18,6 +18,7 @@ function App() {
         tag={userData.tag}
         location={userData.location}
         image={userData.avatar}
+        // @murselsen
         stats={userData.stats}
       />
       <FriendList friends={friends} />
