@@ -9,6 +9,7 @@ const appMode = process.env.NODE_ENV; // Development or Production
 export default defineConfig({
   plugins: [react()],
   //uygulama yolu
+
   // @murselsen
   base: appMode === "development" ? "/" : `/${appName}/`,
   // @murselsen
@@ -17,7 +18,7 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: "../dist",
+    outDir: "./dist",
     emptyOutDir: true,
   }
 
