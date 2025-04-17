@@ -1,4 +1,5 @@
 .Profile {
+    /* @murselsen */
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -12,6 +13,8 @@
     flex-direction: column;
     align-items: center;
     padding: 25px 25px 0px 25px;
+    background-color: rgba(193, 188, 147, 0.13);
+
 }
 
 .Profile .Profile__info .Profile__image {
@@ -19,6 +22,7 @@
     height: auto;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.75);
+    /* @murselsen */
     margin-bottom: 20px;
 
 }
@@ -45,15 +49,35 @@
     list-style: none;
     display: flex;
     margin-bottom: 20px;
+    /* @murselsen */
     margin: 0;
     padding: 0;
+    background-color: rgba(128, 126, 110, 0.204);
 }
 
 .Profile .Profile__stats .Profile__statsItem {
     width: 100%;
+    /* @murselsen */
     display: flex;
     flex-direction: column;
+    gap: 10px;
     align-items: center;
     border: 1px solid #000;
     padding: 20px;
+
+}
+
+.Profile .Profile__stats .Profile__statsItem .Profile__statsItem_statKey,
+.Profile .Profile__stats .Profile__statsItem .Profile__statsItem_statValue {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000;
+    /* @murselsen */
+    text-align: center;
+    margin: 0;
+}
+
+.Profile .Profile__stats .Profile__statsItem .Profile__statsItem_statValue {
+    font-weight: 900;
+    font-size: 1.5rem;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+// @murselsen
 import ProfileCss from './Profile.module.css'
 const Profile = ({
     name, tag, location, image, stats: { followers, views, likes }
@@ -18,16 +19,17 @@ const Profile = ({
 
             <ul className={ProfileCss.Profile__stats}>
                 <li className={ProfileCss.Profile__statsItem}>
-                    <span className={ProfileCss.Profile__statItem_statKey}>Followers</span>
-                    <span className={ProfileCss.Profile__statItem_statValue}>{followers}</span>
+                    <span className={ProfileCss.Profile__statsItem_statKey}>Followers</span>
+                    <span className={ProfileCss.Profile__statsItem_statValue}>{followers}</span>
                 </li>
                 <li className={ProfileCss.Profile__statsItem}>
-                    <span className={ProfileCss.Profile__statItem_statKey}>Views</span>
-                    <span className={ProfileCss.Profile__statItem_statValue}>{views}</span>
+                    <span className={ProfileCss.Profile__statsItem_statKey}>Views</span>
+                    {/* @murselsen */}
+                    <span className={ProfileCss.Profile__statsItem_statValue}>{views}</span>
                 </li>
                 <li className={ProfileCss.Profile__statsItem}>
-                    <span className={ProfileCss.Profile__statItem_statKey}>Likes</span>
-                    <span className={ProfileCss.Profile__statItem_statValue}>{likes}</span>
+                    <span className={ProfileCss.Profile__statsItem_statKey}>Likes</span>
+                    <span className={ProfileCss.Profile__statsItem_statValue}>{likes}</span>
                 </li>
             </ul>
         </div>
