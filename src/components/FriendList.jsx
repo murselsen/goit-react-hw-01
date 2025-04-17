@@ -12,7 +12,7 @@ const FriendListItem = ({
     const statusColor = isOnline ? "green" : "red";
     return (
         <div className={FriendListCss.FriendList__card}>
-            <img className={FriendListCss.FriendList__card_image} src={avatar} alt={name} width="48" />
+            <img className={FriendListCss.FriendList__card_image} src={avatar} alt={name} />
             <p className={FriendListCss.FriendList__card_name}>{name}</p>
             <p className={FriendListCss.FriendList__card_state} style={{ color: statusColor }}>{statusValue}</p>
         </div>
