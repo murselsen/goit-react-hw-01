@@ -3,11 +3,11 @@ import React from 'react'
 // Css
 import './App.css'
 // Components
-import Profile from './components/Profile'
-import FriendList from './components/FriendList'
+import Profile from './components/Profile/Profile'
+import FriendList from './components/FriendList/FriendList'
 // Data
-import userData from './userData.json'
-import friends from './friends.json'
+import userData from './data/userData.json'
+import friends from './data/friends.json'
 function App() {
 
   return (
