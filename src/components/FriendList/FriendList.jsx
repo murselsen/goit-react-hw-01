@@ -22,7 +22,7 @@ const FriendListItem = ({
 };
 
 const FriendList = ({ friends }) => {
-    const mapFriends = friends.map(friend => <li className={FriendListCss.FriendList__item} > <FriendListItem key={friend.key} avatar={friend.avatar} name={friend.name} isOnline={friend.isOnline} /> </li>)
+    const mapFriends = friends.map((friend, index) => <li key={index} className={FriendListCss.FriendList__item}> <FriendListItem avatar={friend.avatar} name={friend.name} isOnline={friend.isOnline} /> </li>)
     return (
         <ul className={FriendListCss.FriendList}>
             {/* @murselsen */}
