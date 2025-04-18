@@ -21,6 +21,7 @@ const TransactionHistory = ({ items }) => {
             <thead>
                 <tr>
                     <th>Type</th>
+                    {/* @murselsen */}
                     <th>Amount</th>
                     <th>Currency</th>
                 </tr>
