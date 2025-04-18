@@ -1,6 +1,7 @@
 // @murselsen
 import React from 'react'
 // Css
+import 'modern-normalize'
 import './App.css'
 // Components
 import Profile from './components/Profile/Profile'
