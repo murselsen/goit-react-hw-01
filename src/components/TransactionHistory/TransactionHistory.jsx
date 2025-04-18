@@ -2,7 +2,20 @@ import React from 'react';
 
 import TransactionHistoryCss from './TransactionHistory.module.css';
 
-const TransactionHistory = () => {
+
+const TransactionHistoryItem = ({ type, amount, currency }) => {
+    return (
+        <>
+            <tr> <td>{type}</td> <td>{amount}</td>  <td>{currency}</td></tr>
+        </>
+    );
+}
+
+
+const TransactionHistory = ({ items }) => {
+    const mapItems = items.map(
+        (item) => <TransactionHistoryItem key={item.id} type={item.type} amount={item.amount} currency={item.currency} />
+    )
     return (
         <table className={TransactionHistoryCss.TransactionHistory}>
             <thead>
@@ -14,18 +27,9 @@ const TransactionHistory = () => {
             </thead>
 
             <tbody>
-                <tr>
-                    <td>Invoice</td>
-                    <td>125</td>
-                    <td>USD</td>
-                </tr>
-                <tr>
-                    <td>Withdrawal</td>
-                    <td>85</td>
-                    <td>USD</td>
-                </tr>
+                {mapItems}
             </tbody>
-        </table>
+        </table >
 
     );
 };
